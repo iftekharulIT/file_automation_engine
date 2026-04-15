@@ -17,16 +17,19 @@ A Python-based automation tool to monitor a folder and automatically organize fi
 Python, pathlib, shutil, os, logging
 
 ## Project Structure
+
+<pre>
 file_automation_engine/
-├── main.py
-├── config.py
-├── utils.py
-├── generate_files.py
+├── main.py                 # Core automation logic
+├── config.py               # Configuration settings
+├── utils.py                # Helper functions (categorization, renaming, duplicates)
+├── generate_files.py       # Synthetic test data generator
 ├── sample_test_folder/
-│   ├── Organized_Files/
+│   ├── Organized_Files/    # Output categorized folders
 │   └── (generated files)
-├── .gitignore
-└── README.md
+├── .gitignore              # Prevents unwanted file uploads
+└── README.md               # Project documentation
+</pre>
 
 ## How It Works
 The script scans a source folder, identifies file types based on extensions, and moves them into structured category folders such as PDFs, Images, Documents, Videos, and others. It ensures duplicate filenames are handled and logs all actions for traceability.
@@ -38,6 +41,8 @@ Step 2: Run automation
 py main.py  
 
 ## Example Output
+
+<pre>
 sample_test_folder/
 └── Organized_Files/
     ├── PDFs/
@@ -48,6 +53,7 @@ sample_test_folder/
     ├── Audio/
     ├── Archives/
     └── Others/
+</pre>
 
 ## Business Use Cases
 - Document management automation  
